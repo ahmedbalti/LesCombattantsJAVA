@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/AfficheClub.fxml</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/ConnexionController.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/ListeClubs.fxml</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/VoteResultsController.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/ModifierClub.fxml</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/entities/Club.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/Tests/Picampers.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/ListeClubsController.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/ClubController.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/IServices/IClubService.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/ModifierClubController.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/Services/ClubService.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/AjoutClub.fxml</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/StatsController.java</file>
+            <file>file:/C:/Users/meryem/Desktop/ala/aa/picampers/src/com/picampers/GUI/AjoutClubController.java</file>
+        </group>
+    </open-files>
+</project-private>

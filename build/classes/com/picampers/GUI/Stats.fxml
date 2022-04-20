@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="369.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.StatsController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="369.0" prefWidth="600.0">
+        <items>
+          <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="142.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Sujets :" />
+                  <Label layoutX="16.0" layoutY="76.0" text="Utilisateurs plus actifs :" />
+                  <Button fx:id="btnsuj" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onAction="#handlesujaction" text="Plus Commentés" />
+                  <Button fx:id="btnusrsuj" layoutX="12.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleusrsuj" text="Par sujet" />
+                  <Label layoutX="14.0" layoutY="213.0" text="Sondages :" />
+                  <Button fx:id="btnvote" layoutX="14.0" layoutY="237.0" mnemonicParsing="false" onAction="#handlebtnvoteaction" text="Participation élevée" />
+                  <Button fx:id="retour" layoutX="17.0" layoutY="334.0" mnemonicParsing="false" onAction="#handleretouraction" text="Retour" />
+                  <Button fx:id="btnusrcom" layoutX="12.0" layoutY="133.0" mnemonicParsing="false" onAction="#handleusrcom" text="Par commentaire" />
+                  <Button fx:id="btnusrvote" layoutX="13.0" layoutY="171.0" mnemonicParsing="false" onAction="#handlevoteaction" text="Par vote" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <BarChart fx:id="sujetpluscom" layoutX="26.0" layoutY="16.0" prefHeight="335.0" prefWidth="399.0" title="sujetpluscom" visible="false">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="yAxis" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <BarChart fx:id="userpluscom" layoutX="16.0" layoutY="18.0" prefHeight="335.0" prefWidth="399.0" visible="false">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="x1Axis" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="y1Axis" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <BarChart fx:id="usrsuj" layoutX="26.0" layoutY="21.0" prefHeight="329.0" prefWidth="399.0" visible="false">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="x2Axis" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="y2Axis" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <BarChart fx:id="usrvote" layoutX="18.0" layoutY="18.0" prefHeight="335.0" prefWidth="418.0" visible="false">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="x3Axis" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="y3Axis" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <BarChart fx:id="vote" layoutX="7.0" layoutY="25.0" prefHeight="322.0" prefWidth="424.0" visible="false">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" fx:id="x4Axis" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis fx:id="y4Axis" side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
