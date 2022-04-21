@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.MesSujetsController">
+   <children>
+      <Button fx:id="btnaffiche1" layoutX="613.0" layoutY="477.0" mnemonicParsing="false" onAction="#handleBtnaffiche1Action" opacity="0.0" text="afficher" />
+      <TextField fx:id="searchSujet" layoutX="579.0" layoutY="19.0" onInputMethodTextChanged="#searchSujet" onKeyReleased="#searchSujet" />
+      <Label layoutX="513.0" layoutY="23.0" text="Recherche :" />
+      <Accordion layoutX="78.0" layoutY="269.0" />
+      <Button fx:id="ajouter" layoutX="92.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleAjouterAction" text="Ajouter">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="8.0" layoutY="117.0" prefHeight="328.0" prefWidth="758.0">
+         <columns>
+            <TableColumn fx:id="tabid" minWidth="0.0" prefWidth="0.0" text="id" />
+            <TableColumn fx:id="tabtitre" prefWidth="220.0" text="Titre" />
+            <TableColumn fx:id="tabuser" prefWidth="103.0" text="Utilisateur" />
+            <TableColumn fx:id="tabtag1" minWidth="0.0" prefWidth="84.0" text="Tag 1" />
+            <TableColumn fx:id="tabtag2" prefWidth="85.0" text="Tag 2" />
+            <TableColumn fx:id="tabtag3" prefWidth="82.0" text="Tag 3" />
+            <TableColumn fx:id="tabdate" prefWidth="142.0" text="Date" />
+            <TableColumn fx:id="tabnb" prefWidth="32.0" text="Nb" />
+         </columns></TableView>
+      <Label fx:id="lblusr" layoutX="133.0" layoutY="14.0" text="Label">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="14.0" text="Utilisateur connecté :" />
+      <Button fx:id="retour" layoutX="14.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleretourAction" text="Retour">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="modifier" layoutX="600.0" layoutY="471.0" mnemonicParsing="false" onAction="#handlemodifieraction" style="-fx-background-color: green;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimer" layoutX="493.0" layoutY="471.0" mnemonicParsing="false" onAction="#handlesupprimeraction" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: red;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="afficher" layoutX="692.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleafficheraction" text="Afficher">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
