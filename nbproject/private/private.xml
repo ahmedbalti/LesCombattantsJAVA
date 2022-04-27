@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Gui/NewFXMain.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Gui/Promotion/Details.fxml</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/IServices/IAffectation.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Controller/DetailsController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Services/ServicePromotion.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Services/ServiceNotification.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/IServices/IPromotion.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Controller/GestionPromotionController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Services/ServiceAffecte.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/utils/MyDb.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Services/ServiceUser.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Main.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Model/User.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/index.html</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Model/PromotionAffecte.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Model/Promotion.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/IServices/IService.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/utils/Mailer.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/GestionRecompense/src/com/CulturaApp/Gui/Promotion/GestionPromotion.fxml</file>
+        </group>
+    </open-files>
+</project-private>
