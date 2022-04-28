@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="732.0" prefWidth="1114.0" style="-fx-background-color: #EAEDED;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.FXMLchoisireHebergementaController">
+   <children>
+      <AnchorPane layoutY="-9.0" prefHeight="126.0" prefWidth="1114.0" style="-fx-background-color: #2D3347;">
+         <children>
+            <Label layoutX="617.0" layoutY="39.0" text="Cultura" textFill="#2196f3">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="736.0" layoutY="39.0" text="MANAGEMENT SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="103.0" fitWidth="193.0" layoutX="10.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/272360253_369148384550957_816901375987819153_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="table" layoutX="330.0" layoutY="224.0" prefHeight="328.0" prefWidth="758.0">
+         <columns>
+            <TableColumn fx:id="tabid" minWidth="0.0" prefWidth="0.0" text="id" />
+            <TableColumn fx:id="namee" prefWidth="118.0" text="Name" />
+            <TableColumn fx:id="nbrstars" prefWidth="69.0" text="NbStars" />
+            <TableColumn fx:id="nbrrooms" minWidth="0.0" prefWidth="81.0" text="NbRooms" />
+            <TableColumn fx:id="addresse" prefWidth="121.0" text="Address" />
+            <TableColumn fx:id="mdescription" prefWidth="134.0" text="Description" />
+            <TableColumn fx:id="typee" prefWidth="85.0" text="Type" />
+            <TableColumn fx:id="mdisponibilite" prefWidth="169.0" text="Disponibilite" />
+         </columns>
+      </TableView>
+      <Button layoutX="1032.0" layoutY="652.0" mnemonicParsing="false" onAction="#suivant" text="Suivant" />
+      <TextField fx:id="tfrecherche" layoutX="620.0" layoutY="176.0" />
+      <AnchorPane layoutY="117.0" prefHeight="149.0" prefWidth="236.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="21.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/admin.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="adminName" layoutX="122.0" layoutY="40.0" text="Admin" textFill="#4c587c">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#26ff00" layoutX="128.0" layoutY="98.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="140.0" layoutY="88.0" text="Online">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="264.0" prefHeight="526.0" prefWidth="236.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutY="65.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffffff;" text="          Hébergement">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="120.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffffff;" text="           Club">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="174.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffffff;" text="           Evenement">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="1.0" layoutY="237.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffffff;" text="           Récompenses">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="15.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffffff;" text="          Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="1.0" layoutY="297.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="237.0" style="-fx-background-color: #ffffff;" text="      Reponse Reclamation">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="238.0" style="-fx-background-color: #ffffff;" text="             Users">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="1.0" layoutY="414.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="238.0" style="-fx-background-color: #ffffff;" text="             Settings" textAlignment="RIGHT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="1.0" layoutY="471.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: #ffffff;" text="              Logout">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="339.0" layoutY="652.0" mnemonicParsing="false" onAction="#Retour" text="Retour" />
+   </children>
+</AnchorPane>

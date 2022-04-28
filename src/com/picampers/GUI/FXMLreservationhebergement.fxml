@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="1.7976931348623157E308" prefHeight="759.0" prefWidth="1395.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.FXMLreservationhebergementController">
+   <children>
+      <Pane layoutX="283.0" layoutY="10.0" prefHeight="64.0" prefWidth="1104.0" style="-fx-background-color: BAB7A4;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#faf9f3" height="56.0" layoutX="333.0" layoutY="26.0" stroke="#0f2b4d" strokeType="OUTSIDE" strokeWidth="5.0" width="432.0" />
+            <Label layoutX="345.0" layoutY="12.0" prefHeight="76.0" prefWidth="408.0" text="Reservation Hebergement" textFill="#fc92ea">
+               <font>
+                  <Font name="Harlow Solid Italic" size="38.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <VBox layoutX="-1.0" prefHeight="759.0" prefWidth="215.0" style="-fx-background-color: D1D0CA;" styleClass="right-bar" stylesheets="@../../../../../../GestionPromotion/src/Value/style.css">
+         <children>
+            <HBox fx:id="chosenhotelCard" alignment="CENTER" prefHeight="110.0" prefWidth="210.0" styleClass="shadow" stylesheets="@../value/style.css">
+               <children>
+                  <Label text="CULT" textFill="#fc92ea">
+                     <font>
+                        <Font name="Cambria Bold" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label text="URA" textFill="#faf9f3">
+                     <font>
+                        <Font name="Cambria Bold" size="48.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="310.0" styleClass="search-box" stylesheets="@../value/style.css">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+               <children>
+                  <TextField prefHeight="50.0" prefWidth="180.0" promptText="Don't Worry we are here" styleClass="transparent" stylesheets="@../../../../../../GestionPromotion/src/Value/style.css">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <BorderPane prefHeight="53.0" prefWidth="385.0" />
+            <VBox alignment="CENTER_LEFT" prefHeight="459.0" prefWidth="153.0" style="-fx-background-color: BAB7A4;" styleClass="chosen-fruit-card" stylesheets="@../value/style.css">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="123.0" prefWidth="164.0">
+                     <children>
+                        <ImageView fitHeight="115.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/272360253_369148384550957_816901375987819153_n.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="12.0" prefWidth="99.0" text="Language" textFill="#c6c1c100">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Separator prefHeight="0.0" prefWidth="241.0" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#Acceuil" prefHeight="31.0" prefWidth="177.0" styleClass="add-btn" stylesheets="@../value/style.css" text="Acceuil" translateY="20.0">
+                     <VBox.margin>
+                        <Insets left="45.0" right="40.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <TextField fx:id="tftitre" layoutX="1004.0" layoutY="178.0" prefHeight="25.0" prefWidth="174.0" promptText="Titre" />
+      <TextField fx:id="tfnom" layoutX="1184.0" layoutY="178.0" prefHeight="25.0" prefWidth="174.0" promptText="Nom" />
+      <RadioButton fx:id="rall" layoutX="1050.0" layoutY="248.0" mnemonicParsing="false" text="all inclusive">
+         <toggleGroup>
+            <ToggleGroup fx:id="g1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdemi" layoutX="1220.0" layoutY="249.0" mnemonicParsing="false" text="demi-pension" toggleGroup="$g1" />
+      <DatePicker fx:id="dpdebut" layoutX="1005.0" layoutY="305.0" promptText="Debut" />
+      <DatePicker fx:id="dpfin" layoutX="1184.0" layoutY="305.0" promptText="Fin" />
+      <Button layoutX="1156.0" layoutY="426.0" mnemonicParsing="false" onAction="#reserver" text="Reserver" />
+      <TableView fx:id="table" layoutX="245.0" layoutY="152.0" prefHeight="428.0" prefWidth="754.0">
+         <columns>
+            <TableColumn fx:id="cid" prefWidth="31.0" text="id" />
+            <TableColumn fx:id="ccoverid" prefWidth="51.0" text="cover id" />
+            <TableColumn fx:id="chebr" prefWidth="84.0" text="hebergement" />
+            <TableColumn fx:id="cnumber" prefWidth="57.0" text="number" />
+            <TableColumn fx:id="cetage" prefWidth="43.0" text="etage" />
+            <TableColumn fx:id="cnblit" prefWidth="48.0" text="nbr lit" />
+            <TableColumn fx:id="cprix" prefWidth="46.0" text="prix" />
+            <TableColumn fx:id="cdesc" prefWidth="111.0" text="description" />
+            <TableColumn fx:id="cdispo" prefWidth="92.0" text="disponibilite" />
+            <TableColumn fx:id="cempla" minWidth="0.0" prefWidth="103.0" text="emplacement" />
+            <TableColumn fx:id="ctype" prefWidth="88.0" text="type" />
+         </columns>
+      </TableView>
+      <Button layoutX="262.0" layoutY="589.0" mnemonicParsing="false" onAction="#precedent" text="Precedent" />
+      <Button layoutX="1133.0" layoutY="599.0" mnemonicParsing="false" onAction="#gotoreservation" text="View my reservation" />
+   </children>
+</AnchorPane>
