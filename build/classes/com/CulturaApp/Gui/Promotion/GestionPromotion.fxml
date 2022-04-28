@@ -15,10 +15,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="709.0" prefWidth="1196.0" style="-fx-background-color: #100e52;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CulturaApp.Controller.GestionPromotionController">
+<AnchorPane id="AnchorPane" prefHeight="849.0" prefWidth="1289.0" style="-fx-background-color: #2D3347;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CulturaApp.Controller.GestionPromotionController">
    <children>
-      <TabPane layoutX="12.0" layoutY="20.0" prefHeight="657.0" prefWidth="1148.0" style="-fx-background-size: #2D3347;" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="14.0" layoutY="153.0" prefHeight="657.0" prefWidth="1242.0" style="-fx-background-size: #2D3347;" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Promotion">
             <content>
@@ -114,5 +115,15 @@
             </Tab>
         </tabs>
       </TabPane>
+      <Label layoutX="40.0" layoutY="49.0" text="Cultura" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="150.0" layoutY="49.0" text="MANAGEMENT SYSTEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
