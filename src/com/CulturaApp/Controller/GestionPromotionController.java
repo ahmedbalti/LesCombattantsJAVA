@@ -38,7 +38,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
+//import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
@@ -414,6 +414,7 @@ public class GestionPromotionController implements Initializable {
 
     void statistic(){
         PCaffect.setTitle("Les promotions Affecté");
+        //PCaffect.setStyle(".chart-pie-label {-fx-fill: #ff4f0a;}");
         PCpromo.setTitle("Les types des promotions");
         PCpromo.setClockwise(true);
         PCaffect.setClockwise(true);
@@ -534,7 +535,7 @@ public class GestionPromotionController implements Initializable {
                       String searchKeyword = newValue.toLowerCase();
                       if(Promotion.getTitle().toLowerCase().indexOf(searchKeyword) > -1){
                           return true;
-                      }else if(Promotion.getType().indexOf(searchKeyword) > -1){
+                      }else if(Promotion.getType().toLowerCase().indexOf(searchKeyword) > -1){
                           return true;
                       }
                       else{

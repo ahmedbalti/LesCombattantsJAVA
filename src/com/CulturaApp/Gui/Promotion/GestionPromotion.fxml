@@ -16,23 +16,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="709.0" prefWidth="1196.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CulturaApp.Controller.GestionPromotionController">
+<AnchorPane id="AnchorPane" prefHeight="709.0" prefWidth="1196.0" style="-fx-background-color: #100e52;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CulturaApp.Controller.GestionPromotionController">
    <children>
-      <TabPane layoutX="12.0" layoutY="20.0" prefHeight="657.0" prefWidth="1148.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="12.0" layoutY="20.0" prefHeight="657.0" prefWidth="1148.0" style="-fx-background-size: #2D3347;" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Promotion">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="1148.0">
                      <children>
-                        <Label layoutX="36.0" layoutY="72.0" text="Titre" />
-                        <Label layoutX="29.0" layoutY="137.0" text="Score Minimum" />
-                        <Label layoutX="35.0" layoutY="226.0" text="Type" />
-                        <Label layoutX="28.0" layoutY="291.0" text="Description" />
+                        <Label layoutX="36.0" layoutY="72.0" text="Titre" textFill="WHITE" />
+                        <Label layoutX="29.0" layoutY="137.0" text="Score Minimum" textFill="WHITE" />
+                        <Label layoutX="35.0" layoutY="226.0" text="Type" textFill="WHITE" />
+                        <Label layoutX="28.0" layoutY="291.0" text="Description" textFill="WHITE" />
                         <TextField fx:id="TFTitle" layoutX="147.0" layoutY="67.0" />
                         <TextField fx:id="TFScore" layoutX="147.0" layoutY="132.0" onKeyTyped="#score" />
                         <TextArea fx:id="TADescription" layoutX="141.0" layoutY="279.0" prefHeight="200.0" prefWidth="200.0" />
-                        <RadioButton fx:id="Cadeau" layoutX="131.0" layoutY="226.0" mnemonicParsing="false" text="Cadeau" />
-                        <RadioButton fx:id="Remise" layoutX="259.0" layoutY="226.0" mnemonicParsing="false" text="Remise" />
+                        <RadioButton fx:id="Cadeau" layoutX="131.0" layoutY="226.0" mnemonicParsing="false" text="Cadeau" textFill="WHITE" />
+                        <RadioButton fx:id="Remise" layoutX="259.0" layoutY="226.0" mnemonicParsing="false" text="Remise" textFill="WHITE" />
                         <TableView fx:id="PromoTable" layoutX="477.0" layoutY="116.0" onMouseClicked="#edit" prefHeight="305.0" prefWidth="657.0">
                           <columns>
                             <TableColumn fx:id="idCol" prefWidth="49.0" style="-fx-alignment: center;" text="ID" visible="false" />
@@ -42,7 +42,7 @@
                               <TableColumn fx:id="scoreCol" prefWidth="101.0" style="-fx-alignment: center;" text="score" />
                           </columns>
                         </TableView>
-                        <Button layoutX="374.0" layoutY="132.0" mnemonicParsing="false" onAction="#AjouterPromotion" text="Ajouter" />
+                        <Button layoutX="374.0" layoutY="132.0" mnemonicParsing="false" onAction="#AjouterPromotion" style="-fx-background-color: #2196f3;" text="Ajouter" textFill="#fffdfd" />
                         <ImageView fitHeight="29.0" fitWidth="42.0" layoutX="497.0" layoutY="437.0" onMouseClicked="#refreshTablepromo" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../icons/refresh.png" />
@@ -67,10 +67,10 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="37.0" layoutY="57.0" text="User :" />
-                        <Label layoutX="27.0" layoutY="113.0" text="Promotion :" />
-                        <Label layoutX="24.0" layoutY="173.0" text="Date Limite :" />
-                        <Button fx:id="btnAff" layoutX="131.0" layoutY="269.0" mnemonicParsing="false" onAction="#ajouterAffectation" text="Affecter" />
+                        <Label layoutX="37.0" layoutY="57.0" text="User :" textFill="WHITE" />
+                        <Label layoutX="27.0" layoutY="113.0" text="Promotion :" textFill="WHITE" />
+                        <Label layoutX="24.0" layoutY="173.0" text="Date Limite :" textFill="WHITE" />
+                        <Button fx:id="btnAff" layoutX="131.0" layoutY="269.0" mnemonicParsing="false" onAction="#ajouterAffectation" style="-fx-background-color: #2196f3;" text="Affecter" textFill="WHITE" />
                         <TextField fx:id="tfuser" layoutX="121.0" layoutY="53.0" onKeyTyped="#score" />
                         <TextField fx:id="tfpromo" layoutX="121.0" layoutY="108.0" onKeyTyped="#score" />
                         <DatePicker fx:id="dpDate" layoutX="121.0" layoutY="179.0" />
@@ -104,10 +104,10 @@
                      <children>
                         <VBox layoutX="43.0" layoutY="41.0" prefHeight="329.0" prefWidth="429.0">
                            <children>
-                              <PieChart fx:id="PCpromo" prefHeight="262.0" prefWidth="345.0" />
+                              <PieChart fx:id="PCpromo" prefHeight="262.0" prefWidth="345.0" styleClass="chart-pie-label" stylesheets="@Style.css" />
                            </children>
                         </VBox>
-                        <PieChart fx:id="PCaffect" layoutX="574.0" layoutY="47.0" prefHeight="262.0" prefWidth="345.0" />
+                        <PieChart fx:id="PCaffect" layoutX="574.0" layoutY="47.0" prefHeight="262.0" prefWidth="345.0" styleClass="chart-pie-label" stylesheets="@Style.css" />
                      </children>
                   </AnchorPane>
               </content>
