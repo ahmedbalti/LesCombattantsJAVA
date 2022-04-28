@@ -6,16 +6,18 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="AnchorPane" prefHeight="473.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.ListeHebergementsController">
    <children>
-      <Button fx:id="btnaffiche1" layoutX="613.0" layoutY="477.0" mnemonicParsing="false" onAction="#handleBtnaffiche1Action" opacity="0.0" text="afficher" />
-      <TextField fx:id="searchSujet" layoutX="613.0" layoutY="86.0" onInputMethodTextChanged="#searchSujet" onKeyReleased="#searchSujet" />
-      <Label layoutX="545.0" layoutY="90.0" text="Recherche :" />
+      <Button fx:id="btnaffiche1" layoutX="411.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleBtnaffiche1Action" opacity="0.0" text="afficher" textFill="#0d0c0c" />
+      <TextField fx:id="searchSujet" layoutX="613.0" layoutY="86.0" onInputMethodTextChanged="#searchSujet" onKeyReleased="#searchSujet" promptText="Recherche" />
+      <Label layoutX="545.0" layoutY="90.0" />
       <Accordion layoutX="78.0" layoutY="269.0" />
-      <Button fx:id="ajouter" layoutX="660.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleAjouterHouseAction" text="Ajouter House" />
+      <Button fx:id="ajouter" layoutX="660.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleAjouterHouseAction" style="-fx-background-color: #2D3347;" text="Ajouter House" textFill="#fcf9f9" />
       <TableView fx:id="table" layoutX="8.0" layoutY="117.0" prefHeight="328.0" prefWidth="758.0">
          <columns>
             <TableColumn fx:id="tabid" minWidth="0.0" prefWidth="0.0" text="id" />
@@ -27,15 +29,22 @@
             <TableColumn fx:id="typee" prefWidth="85.0" text="Type" />
             <TableColumn fx:id="mdisponibilite" prefWidth="169.0" text="Disponibilite" />
          </columns></TableView>
-      <Label fx:id="lblusr" layoutX="133.0" layoutY="14.0" text="Label">
+      <Label fx:id="lblusr" layoutX="133.0" layoutY="14.0" text="Label" textFill="#d77e7e">
          <font>
             <Font name="System Bold" size="12.0" />
          </font></Label>
-      <Button fx:id="btnHotels" layoutX="14.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleBtnHotels" text="Hotels" />
+      <Button fx:id="btnHotels" layoutX="14.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleBtnHotels" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #2196f3;" text="Hotels" textFill="#fcfcfc" />
       <Label layoutX="14.0" layoutY="14.0" text="Utilisateur connecté :" />
-      <Button fx:id="decon" layoutX="669.0" layoutY="10.0" mnemonicParsing="false" onAction="#handledeconAction" text="Se déconnecter" />
-      <Button fx:id="btnHouses" layoutX="78.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleBtnHouses" text="Houses" />
-      <Button fx:id="ajouter1" layoutX="488.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleAjouterAction" text="Ajouter Hotel" />
-      <Button fx:id="btnTout" layoutX="144.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleBtnTout" text="Tous" />
+      <Button fx:id="decon" layoutX="669.0" layoutY="10.0" mnemonicParsing="false" onAction="#handledeconAction" text="Se déconnecter" textFill="#2196f3" />
+      <Button fx:id="btnHouses" layoutX="101.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleBtnHouses" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #2196f3;" text="Houses" textFill="#fcfcfc" />
+      <Button fx:id="ajouter1" layoutX="565.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleAjouterAction" style="-fx-background-color: #2D3347;" text="Ajouter Hotel" textFill="#fffdfd" />
+      <Button fx:id="btnTout" layoutX="196.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleBtnTout" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #2196f3;" text="Tous" textFill="#f5f4f4" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="583.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../Documents/NetBeansProjects/hotel-management-system-master/src/main/resources/com/hotel/hotelmanagement/res/icons8-search-32.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="467.0" layoutY="452.0" mnemonicParsing="false" onAction="#ajouterroom" style="-fx-background-color: #2D3347;" text="Ajouter Room" textFill="#fffdfd" />
+      <Button fx:id="retour" layoutX="554.0" layoutY="10.0" mnemonicParsing="false" onAction="#Retour" text="Retour" textFill="#2196f3" />
    </children>
 </AnchorPane>

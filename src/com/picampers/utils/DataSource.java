@@ -5,15 +5,9 @@
  */
 package com.picampers.utils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  *
@@ -21,43 +15,33 @@ import java.util.logging.Logger;
  */
 public class DataSource {
     
+    
+    private String URL ="jdbc:mysql://localhost:3306/cultura2";
+    final String USER="root";
+    final String PWD="";
+    private static Connection cnx;
     private static DataSource instance;
-    private Connection cnx;
-    private String url ="jdbc:mysql://localhost:3306/cultura2";
-    private String user;//="root";
-    private String password;//="";
-    private Properties properties;
-    private DataSource()
-    {properties=new Properties();
-    
-        try {
-            properties.load(new FileInputStream(new File("configuration.properties")));
-            //url=properties.getProperty("url");
-            user=properties.getProperty("user");
-            password=properties.getProperty("password");
-            cnx=DriverManager.getConnection(url, user, password);
-            System.out.println("connexion avec succés");
-        } catch (SQLException ex) {
-            Logger.getLogger(DataSource.class.getName()).log(Level.SEVERE, null, ex);
-            System.out.println("échec");
-        } catch (IOException ex) {
-            Logger.getLogger(DataSource.class.getName()).log(Level.SEVERE, null, ex);
+
+    private DataSource() {
+        try{
+            cnx=DriverManager.getConnection(URL, USER,PWD);
+        }catch(SQLException ex){
+                System.out.println(ex.getMessage());
         }
-    
-    
     }
-    
-    public static DataSource getMyInstance()
-    {if(instance==null)
-    instance=new DataSource();
-    return instance;
-    
+    public static DataSource getMyInstance(){
+        if(instance==null){
+            instance=new DataSource();
+        }
+        else{
+            System.out.println("deja connecte");
+        }
+        return instance;
     }
-           
-    public Connection getMyConnexion()
-    {return cnx;}
-    
-    
+
+    public static Connection getMyConnexion() {
+        return cnx;
+    }
     
     
 }

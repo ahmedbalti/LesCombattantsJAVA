@@ -13,47 +13,36 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableColumn.CellDataFeatures;
-import javafx.scene.control.TablePosition;
-import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
-import javafx.util.Callback;
-import javafx.util.Duration;
-import org.controlsfx.control.Notifications;
 import com.picampers.IServices.IHebergementService;
 import com.picampers.Services.HebergementService;
 import java.util.ArrayList;
 import java.util.List;
-
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 /**
  *
  * @author Arij
@@ -62,13 +51,17 @@ public class ListeHebergementsController implements Initializable {
  
 private static int val;
 
-@FXML private Button ajouter;
+    @FXML
+    private Button ajouter;
 @FXML private TextField searchSujet;
 @FXML private Label lblusr;
 @FXML private Button btnaffiche1;
-@FXML private Button btnHouses;
-@FXML private Button btnHotels;  
+    @FXML
+    private Button btnHouses;  
+    @FXML
+    private Button btnHotels;  
 private static int idusr = 1;
+
 
     public static int getIdusr() {
         return idusr;
@@ -88,15 +81,17 @@ private static String usr;
         ListeHebergementsController.usr = usr;
     }
     
-     @FXML private TableColumn<Hebergement, String> namee;
-    @FXML private TableColumn<Hebergement, Integer> nbrstars;
-    @FXML private TableColumn<Hebergement, Integer> nbrrooms;
-    @FXML private TableColumn<Hebergement, String> addresse;
+    @FXML
+    private TableColumn<Hebergement, String> namee;
+    @FXML
+    private TableColumn<Hebergement, Integer> nbrstars;
+    @FXML
+    private TableColumn<Hebergement, Integer> nbrrooms;
+    @FXML
+    private TableColumn<Hebergement, String> addresse;
     @FXML private TableColumn<Hebergement, String> mdescription;
     @FXML private TableColumn<Hebergement, String> typee;
     @FXML private TableColumn<Hebergement, String> mdisponibilite;
-    @FXML private TableColumn<Hebergement, String> tabdate;
-    @FXML private TableColumn<Hebergement, String> tabnb;
     @FXML private TableColumn<Hebergement, String> tabid;
     @FXML private TableView<Hebergement> table;
     
@@ -115,6 +110,14 @@ private static String usr;
     public static int getVal() {
         return val;
     }
+    @FXML
+    private Button decon;
+    @FXML
+    private Button ajouter1;
+    @FXML
+    private Button btnTout;
+    @FXML
+    private Button retour;
 
     private void loadHebergements(){
       IHebergementService iHebergementService =new HebergementService();
@@ -211,30 +214,27 @@ Statement stmt = null;
        stage.show();
     }    
     
-    @FXML
     private void handlestataction(ActionEvent event) throws IOException {
        Stage stage; 
        Parent root;
        stage=(Stage) btnHouses.getScene().getWindow();
-       root = FXMLLoader.load(getClass().getResource("Stats.fxml"));
+       root = FXMLLoader.load(getClass().getResource("AfficheHebergement.fxml"));
        Scene scene = new Scene(root);
        stage.setScene(scene);
        stage.show();
  }    
     
-    
-     @FXML
-    private void handleBtnHouses(ActionEvent event) throws IOException {
-        loadHouses();
- }
-    
-    
-     @FXML
+    @FXML
     private void handleBtnHotels(ActionEvent event) throws IOException {
         loadHotels();
  }    
     
-         @FXML
+    @FXML
+    private void handleBtnHouses(ActionEvent event) throws IOException {
+        loadHouses();
+ }
+    
+    @FXML
     private void handleBtnTout(ActionEvent event) throws IOException {
         loadHebergements();
  }    
@@ -266,7 +266,7 @@ Statement stmt = null;
        stage.show();
  }
        
-              @FXML
+    @FXML
        private void handleAjouterHouseAction(ActionEvent event) throws IOException {
         
        IHebergementService iHebergementService =new HebergementService();  
@@ -348,4 +348,33 @@ table.getSelectionModel().selectedItemProperty().addListener((observable, oldVal
     } catch (IOException ex) {
         Logger.getLogger(ListeHebergementsController.class.getName()).log(Level.SEVERE, null, ex);
     }});
-}}
+}
+    @FXML
+    private void ajouterroom(ActionEvent event){
+    Stage closestage=(Stage)((Node)event.getSource()).getScene().getWindow();
+                    closestage.close();
+                    try {
+                        Parent root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/FXMLroom.fxml"));
+                        Scene scene = new Scene(root);
+                        Stage primaryStage=new Stage();
+                        primaryStage.setTitle("Signup");
+                        primaryStage.setScene(scene);
+                        primaryStage.show();
+                    } catch (IOException ex) {
+                        Logger.getLogger(FXMLchoisireHebergementaController.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+    }
+
+    @FXML
+    private void Retour(ActionEvent event) {
+                                            try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/picampers/GUI/HomeBack.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(HomeBackController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+}

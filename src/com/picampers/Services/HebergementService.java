@@ -297,5 +297,46 @@ Statement stmt = null;
         return Hebergements;
     }
     
-    
+    public List<String> getAllHebergementName(){
+        List<String> resultat=new ArrayList<>();
+        String query="SELECT * from hebergement";
+        try (PreparedStatement statement = conn.prepareStatement(query)) {
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                
+                resultat.add(resultSet.getString("name"));  
+                
+               
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return resultat;
+    }
+    public Hebergement getHebergementByName(String name){
+        Hebergement hebergement=new Hebergement();
+        String query="SELECT * from hebergement where name='"+name+"'";
+        try (PreparedStatement statement = conn.prepareStatement(query)) {
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                
+                hebergement.setId(resultSet.getInt("id"));
+                //sujet.setIduser(resultSet.getInt("iduser"));
+                hebergement.setCover_id(resultSet.getInt("cover_id"));
+                hebergement.setName(resultSet.getString("name"));  
+                hebergement.setNbStars(resultSet.getInt("nb_stars"));
+                hebergement.setNbRooms(resultSet.getInt("nb_rooms"));
+                hebergement.setAddress(resultSet.getString("address"));   
+                hebergement.setDescription(resultSet.getString("description"));
+                hebergement.setType(resultSet.getString("type"));
+                hebergement.setDisponibilite(resultSet.getInt("disponibilite"));
+                      
+                
+               
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return hebergement;
+    }
 }

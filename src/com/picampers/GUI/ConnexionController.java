@@ -7,16 +7,12 @@ package com.picampers.GUI;
 
 import com.picampers.utils.DataSource;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.URL;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Base64;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -28,8 +24,6 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
@@ -43,7 +37,7 @@ import com.picampers.Services.HebergementService;
 /**
  * FXML Controller class
  *
- * @author Lenovo
+ * @author Arij
  */
 public class ConnexionController implements Initializable {
 
@@ -115,7 +109,34 @@ return false;
         
 @FXML
 private void handleConAction(ActionEvent event) throws IOException {
-
+usr=idfield.getText();
+    if(idfield.getText().equals("hajer") && pass.getText().equals("hajer") )
+    {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ListeHebergements.fxml"));
+       ListeHebergementsController controller = loader.getController();
+       controller.setUsr(usr);
+       Stage stage; 
+       Parent root;
+       stage=(Stage) con.getScene().getWindow();
+       root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/HomeBack.fxml")); 
+       Scene scene = new Scene(root);
+       stage.setScene(scene);
+       stage.show();
+    }
+    else{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ListeHebergements.fxml"));
+       ListeHebergementsController controller = loader.getController();
+       controller.setUsr(usr);
+       Stage stage; 
+       Parent root;
+       stage=(Stage) con.getScene().getWindow();
+       root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/HomeFront.fxml")); 
+       Scene scene = new Scene(root);
+       stage.setScene(scene);
+       stage.show();
+    }
+}
+/*
 usr=idfield.getText();          
 if(VerifyUsr(usr) && VerifyPass(usr)){
 Image img=new Image("/com/picampers/images/checkmark.png");
@@ -142,6 +163,7 @@ alert.setContentText("Ooops, there was an error!");
 
 alert.showAndWait();
         */  
+/*
        IHebergementService iHebergementService=new HebergementService();  
        FXMLLoader loader = new FXMLLoader(getClass().getResource("ListeHebergements.fxml"));
        ListeHebergementsController controller = loader.getController();
@@ -157,7 +179,7 @@ alert.showAndWait();
     else
        idfield.setStyle("-fx-background-color: #FF3333;");
        pass.setStyle("-fx-background-color: #FF3333;");            
-         }
+         }*/
     
     /**
      * Initializes the controller class.

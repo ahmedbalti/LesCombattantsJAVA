@@ -6,18 +6,12 @@ package com.picampers.GUI;
 
 import com.picampers.Services.HebergementService;
 import com.picampers.entities.Hebergement;
-import com.picampers.utils.DataSource;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -38,18 +32,11 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
-import javafx.collections.FXCollections;
-import javafx.event.EventHandler;
-import javafx.geometry.Pos;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TitledPane;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Duration;
 import org.apache.commons.io.IOUtils;
-import org.controlsfx.control.Notifications;
 import com.picampers.IServices.IHebergementService;
-import static java.util.Date.parse;
-import javafx.scene.control.cell.PropertyValueFactory;
 
 
 /**
@@ -158,7 +145,6 @@ else {
       IHebergementService iHebergementService=new HebergementService();  
       Hebergement c1=new Hebergement();   
       c1.setName(namee.getText());
-     // c1.setNbStars(integer parse.Int(nbrstars));   Integer.toString
       c1.setNbStars(Integer.parseInt(nbrstars.getText()));  
       c1.setNbRooms(Integer.parseInt(nbrrooms.getText())); 
       c1.setAddress(addresse.getText());

@@ -16,48 +16,26 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import com.picampers.Services.HebergementService;
-import com.picampers.entities.Hebergement;
 import com.picampers.utils.DataSource;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
-import javafx.geometry.Bounds;
 import javafx.geometry.Pos;
-import javafx.scene.Group;
-import javafx.scene.chart.PieChart;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TablePosition;
-import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.scene.control.TitledPane;
-import javafx.scene.control.Toggle;
-import javafx.scene.control.ToggleGroup;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.paint.Color;
-import javafx.util.Callback;
 import javafx.util.Duration;
 import org.controlsfx.control.Notifications;
 import org.controlsfx.control.PopOver;
 import com.picampers.IServices.IHebergementService;
 import com.picampers.Services.HebergementService;
 import com.picampers.entities.Hebergement;
+import javafx.scene.layout.AnchorPane;
 
 /**
  *
@@ -82,9 +60,12 @@ private Button annulmodif;
 @FXML private Button supprimer;
 @FXML private Label lblid;
 @FXML private Label lbliduser;
-@FXML private Label lblnbr;
-@FXML private Label lbltitre;
-@FXML private Label lbldesc;
+@FXML private Label labelstars;
+@FXML private Label labelrooms;
+@FXML private Label labeladdress;
+@FXML private Label labelname;
+@FXML private Label labeldescription;
+private Label lbldesc;
 @FXML private Label lbldate;  
 @FXML private Button retour;
 @FXML private Button modifier;
@@ -138,20 +119,28 @@ private static String usr;
         return val;
     }
     @FXML
-    private Label lbl1;
+    private Label lblname;
     @FXML
-    private Label lbl7;
+    private Label lblnbstars;
     @FXML
-    private Label lbl8;
+    private Label lblnbrooms;
+    @FXML
+    private Label lbladdress;
+    @FXML
+    private Label lbldescription;
     @FXML
     private Button modifier1;
     @FXML
     private Button supprimer1;
-    @FXML
-    private Label lbl81;
-    @FXML
     private Label labelid;
+    @FXML
+    private AnchorPane AnchorPane;
+    @FXML
+    private Label lblnbr;
+    @FXML
+    private Label lbldes;
         
+ 
 
 @FXML
 private void handleSupprimerAction(ActionEvent event) throws IOException {
@@ -318,17 +307,16 @@ int id=Integer.parseInt(labelid.getText());
   
   IHebergementService iHebergementService=new HebergementService(); 
   lblid.setText(String.valueOf(val));
-  labelid.setText(String.valueOf(iHebergementService.afficher(val).get(0).getId()));
-  //lbltag1.setText(iSujetService.afficher(val).get(0).get());
-  //lbltag2.setText(iSujetService.afficher(val).get(0).getTag2());
-  //lbltag3.setText(iSujetService.afficher(val).get(0).getTag3());
-  lblnbr.setText(String.valueOf(iHebergementService.afficher(val).get(0).getAddress()));
+//  labelid.setText(String.valueOf(iHebergementService.afficher(val).get(0).getId()));
   
-  
-  
-  lbltitre.setText(iHebergementService.afficher(val).get(0).getName());
-  lbldesc.setText(iHebergementService.afficher(val).get(0).getDescription());  
+  labelname.setText(iHebergementService.afficher(val).get(0).getName());
+  labelstars.setText(String.valueOf(iHebergementService.afficher(val).get(0).getNbStars()));
+  labelrooms.setText(String.valueOf(iHebergementService.afficher(val).get(0).getNbRooms()));
+  labeladdress.setText(String.valueOf(iHebergementService.afficher(val).get(0).getAddress()));
+  labeldescription.setText(iHebergementService.afficher(val).get(0).getDescription());  
   lbldate.setText(String.valueOf(iHebergementService.afficher(val).get(0).getType())); 
+    
+    
 //Image image1 = new Image(getClass().getResourceAsStream(String.valueOf(iSujetService.afficher(val).get(0).getImage())));
 //img.setImage(image1);
   

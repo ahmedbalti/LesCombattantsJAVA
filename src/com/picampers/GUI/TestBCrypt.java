@@ -14,20 +14,19 @@
 
 package com.picampers.GUI;
 
-import java.util.Arrays;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
 import org.apache.commons.lang3.ArrayUtils;
-import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
 /**
  * JUnit unit tests for BCrypt routines
  * @author Damien Miller
  * @version 0.2
  */
 public class TestBCrypt {
-   
+   /*
 	public void legacyEncryption(String salt, String clearPassword) throws UnsupportedEncodingException, NoSuchAlgorithmException {
   // Get digester instance for algorithm "SHA-512" using BounceCastle
   MessageDigest digester = MessageDigest.getInstance("SHA-512", new BouncyCastleProvider());
@@ -49,5 +48,5 @@ public class TestBCrypt {
   // Log the resulting hash as base64 String
   public void main(String[] args) throws UnsupportedEncodingException, NoSuchAlgorithmException {
 legacyEncryption("test","ala");
-  }
+  }*/
 }
