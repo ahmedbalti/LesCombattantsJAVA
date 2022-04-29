@@ -54,8 +54,6 @@ public class DetailsController implements Initializable {
     @FXML
     private Label LtypeP;
 
-    @FXML
-    private TextField test;
 
     Promotion pr ;
     User us;

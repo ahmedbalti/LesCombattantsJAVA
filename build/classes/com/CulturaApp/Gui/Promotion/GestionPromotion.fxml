@@ -15,25 +15,26 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="849.0" prefWidth="1289.0" style="-fx-background-color: #2D3347;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CulturaApp.Controller.GestionPromotionController">
+<AnchorPane id="AnchorPane" prefHeight="910.0" prefWidth="1502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.CulturaApp.Controller.GestionPromotionController">
    <children>
-      <TabPane layoutX="14.0" layoutY="153.0" prefHeight="657.0" prefWidth="1242.0" style="-fx-background-size: #2D3347;" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="294.0" layoutY="130.0" prefHeight="617.0" prefWidth="1208.0" style="-fx-background-size: #2D3347;" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Promotion">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="1148.0">
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="641.0" prefWidth="1282.0">
                      <children>
-                        <Label layoutX="36.0" layoutY="72.0" text="Titre" textFill="WHITE" />
-                        <Label layoutX="29.0" layoutY="137.0" text="Score Minimum" textFill="WHITE" />
-                        <Label layoutX="35.0" layoutY="226.0" text="Type" textFill="WHITE" />
-                        <Label layoutX="28.0" layoutY="291.0" text="Description" textFill="WHITE" />
+                        <Label layoutX="36.0" layoutY="72.0" text="Titre" textFill="#544a4a" />
+                        <Label layoutX="29.0" layoutY="137.0" text="Score Minimum" textFill="#544a4a" />
+                        <Label layoutX="35.0" layoutY="226.0" text="Type" textFill="#544a4a" />
+                        <Label layoutX="28.0" layoutY="291.0" text="Description" textFill="#544a4a" />
                         <TextField fx:id="TFTitle" layoutX="147.0" layoutY="67.0" />
                         <TextField fx:id="TFScore" layoutX="147.0" layoutY="132.0" onKeyTyped="#score" />
                         <TextArea fx:id="TADescription" layoutX="141.0" layoutY="279.0" prefHeight="200.0" prefWidth="200.0" />
-                        <RadioButton fx:id="Cadeau" layoutX="131.0" layoutY="226.0" mnemonicParsing="false" text="Cadeau" textFill="WHITE" />
-                        <RadioButton fx:id="Remise" layoutX="259.0" layoutY="226.0" mnemonicParsing="false" text="Remise" textFill="WHITE" />
+                        <RadioButton fx:id="Cadeau" layoutX="131.0" layoutY="226.0" mnemonicParsing="false" text="Cadeau" textFill="#544a4a" />
+                        <RadioButton fx:id="Remise" layoutX="259.0" layoutY="226.0" mnemonicParsing="false" text="Remise" textFill="#544a4a" />
                         <TableView fx:id="PromoTable" layoutX="477.0" layoutY="116.0" onMouseClicked="#edit" prefHeight="305.0" prefWidth="657.0">
                           <columns>
                             <TableColumn fx:id="idCol" prefWidth="49.0" style="-fx-alignment: center;" text="ID" visible="false" />
@@ -68,9 +69,9 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="37.0" layoutY="57.0" text="User :" textFill="WHITE" />
-                        <Label layoutX="27.0" layoutY="113.0" text="Promotion :" textFill="WHITE" />
-                        <Label layoutX="24.0" layoutY="173.0" text="Date Limite :" textFill="WHITE" />
+                        <Label layoutX="37.0" layoutY="57.0" text="User :" textFill="#544a4a" />
+                        <Label layoutX="27.0" layoutY="113.0" text="Promotion :" textFill="#544a4a" />
+                        <Label layoutX="24.0" layoutY="173.0" text="Date Limite :" textFill="#544a4a" />
                         <Button fx:id="btnAff" layoutX="131.0" layoutY="269.0" mnemonicParsing="false" onAction="#ajouterAffectation" style="-fx-background-color: #2196f3;" text="Affecter" textFill="WHITE" />
                         <TextField fx:id="tfuser" layoutX="121.0" layoutY="53.0" onKeyTyped="#score" />
                         <TextField fx:id="tfpromo" layoutX="121.0" layoutY="108.0" onKeyTyped="#score" />
@@ -115,15 +116,93 @@
             </Tab>
         </tabs>
       </TabPane>
-      <Label layoutX="40.0" layoutY="49.0" text="Cultura" textFill="#2196f3">
-         <font>
-            <Font name="System Bold" size="32.0" />
-         </font>
-      </Label>
-      <Label layoutX="150.0" layoutY="49.0" text="MANAGEMENT SYSTEM" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="32.0" />
-         </font>
-      </Label>
+      <AnchorPane layoutX="10.0" layoutY="131.0" prefHeight="152.0" prefWidth="280.0" style="-fx-background-color: #c2bcbc;">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="21.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/res/usericon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="122.0" layoutY="40.0" text="Admin" textFill="#4c587c">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Circle fill="#26ff00" layoutX="128.0" layoutY="98.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="140.0" layoutY="88.0" text="Online">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="284.0" prefHeight="609.0" prefWidth="281.0" style="-fx-background-color: #c2bcbc;">
+         <children>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutY="65.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="          Hébergement">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="120.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="           Club">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="174.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="           Evenement">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="1.0" layoutY="237.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="           Récompenses">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="15.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="          Dashboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutY="298.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="            Reponse Reclamation">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="             Users">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="1.0" layoutY="414.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="             Settings" textAlignment="RIGHT">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="1.0" layoutY="471.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="280.0" style="-fx-background-color: #d4cecd;" text="              Logout">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-7.0" prefHeight="125.0" prefWidth="1510.0" style="-fx-background-color: #2D3347;">
+         <children>
+            <Label layoutX="27.0" layoutY="39.0" text="Cultura" textFill="#2196f3">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="137.0" layoutY="39.0" text="MANAGEMENT SYSTEM" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="904.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Downloads/res/icons8-logout-60.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

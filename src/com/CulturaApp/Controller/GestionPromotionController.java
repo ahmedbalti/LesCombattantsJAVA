@@ -483,11 +483,15 @@ public class GestionPromotionController implements Initializable {
 //      nextScene.setPromotion(listePromo.get(0));
 
         try {
-            Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            //Stage stage = new Stage();
-            //Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/CulturaApp/Gui/Promotion/Details.fxml"));
+
+           //FXMLLoader loader = new FXMLLoader(getClass().getResource("com/CulturaApp/Gui/Promotion/Details.fxml"));
+            //Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+            Stage stage = new Stage();
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/CulturaApp/Gui/Promotion/Details.fxml"));
-            Scene scene = new Scene(root);
+            //Parent root = (Parent) loader.load();
+           //Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/CulturaApp/Gui/Promotion/Details.fxml"));
+           //nextScene = loader.getController();
+           Scene scene = new Scene(root);
 
             stage.setScene(scene);
             stage.setTitle("Details");
