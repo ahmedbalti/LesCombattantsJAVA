@@ -3,7 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Arij/Desktop/ne/last%20one%20integration/picampers/src/com/picampers/FXMain.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/FXMLEvent.fxml</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/EventDetailsFXML.fxml</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Services/ServiceLieu.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Services/IService.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Model/Lieu.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/map/index.html</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/stylesheetevent.css</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Model/Event.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/EventDetailsFXMLController.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/NewFXMain.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Main.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/EventFrontFXMLController.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Services/ServiceEvent.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/map/recupMap.html</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/Gui/FXMLEventController.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/src/com/CulturaApp/utils/MyDb.java</file>
+            <file>file:/C:/Users/Yassine/Downloads/GestionRecompense/GestionEvent/nbproject/build-impl.xml</file>
         </group>
     </open-files>
 </project-private>
