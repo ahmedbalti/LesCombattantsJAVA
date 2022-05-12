@@ -7,7 +7,7 @@ package com.picampers.entities;
 
 /**
  *
- * @author Mortadha
+ * @author arij
  */
 public class Table {
     private int id;

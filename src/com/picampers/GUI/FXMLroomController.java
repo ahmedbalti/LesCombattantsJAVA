@@ -170,14 +170,14 @@ public class FXMLroomController implements Initializable {
        // System.out.println(selectedFile.getAbsolutePath());
         
         InputStream input = new FileInputStream(selectedFile.getAbsolutePath());
-        OutputStream output = new FileOutputStream("C:\\wamp\\www\\images\\"+selectedFile.getName());
+        OutputStream output = new FileOutputStream("C:\\wamp64\\www\\images\\"+selectedFile.getName());
         
         IOUtils.copy(input, output);
 
         
         if (selectedFile != null) {
           //  imageFile = selectedFile.toURI().toURL().toString();
-           imageFile="file:/C:/wamp/www/images/"+selectedFile.getName();
+           imageFile="file:/C:/wamp64/www/images/"+selectedFile.getName();
           
            
             fileSelected.setText(imageFile);
@@ -188,7 +188,7 @@ public class FXMLroomController implements Initializable {
             
         } else {
             
-  Image imgch=new Image("file:/C:/wamp/www/images/noIMG.PNG");    
+  Image imgch=new Image("file:/C:/wamp64/www/images/noIMG.PNG");    
   imageView.setImage(imgch); 
   
 }   } catch (FileNotFoundException ex) {

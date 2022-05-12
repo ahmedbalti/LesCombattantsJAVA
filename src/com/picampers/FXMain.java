@@ -5,6 +5,7 @@
  */
 package com.picampers;
 
+import com.picampers.Controller.GestionPromotionController;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -27,8 +28,17 @@ public class FXMain extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/Connexion.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/Login.fxml"));
             // Parent root1 = FXMLLoader.load(getClass().getResource("FXML.fxml"));
+
+            //khedmet ramez 
+            //Parent root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/Recompense/GestionPromotion.fxml"));
+            
+            //khedmet bouhmid
+            //Parent root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/FXMLReclamation.fxml"));
+            
+            //khedmet tilouche
+            //Parent root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/FXMLEvent.fxml"));
             
             Scene scene = new Scene(root);
             //  Scene scene1 = new Scene(root1);
@@ -44,6 +54,8 @@ public class FXMain extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+       // GestionPromotionController gc = new GestionPromotionController();
+       //gc.searchPromo();
     }
     
 }

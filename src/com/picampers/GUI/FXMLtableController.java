@@ -99,6 +99,8 @@ public class FXMLtableController implements Initializable {
     ObservableList<Table> data = FXCollections.observableArrayList(); 
     ObservableList<String> options = FXCollections.observableArrayList(hs.getAllClubName()); 
     private String imageFile;
+    @FXML
+    private Label adminName;
 
     /**
      * Initializes the controller class.
@@ -311,6 +313,7 @@ public class FXMLtableController implements Initializable {
     }
 
     //@FXML
+    @FXML
     private void filldata(MouseEvent event) {
         Table t=table.getSelectionModel().getSelectedItem();
         if(t!=null){
@@ -327,7 +330,7 @@ public class FXMLtableController implements Initializable {
     @FXML
     private void stat(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/FXMLstat.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/com/picampers/GUI/FXMLstat2.fxml"));
             Scene scene = new Scene(root);
             Stage primaryStage=new Stage();
             primaryStage.setTitle("Stat");

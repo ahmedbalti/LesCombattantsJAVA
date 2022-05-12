@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.RecStatController">
+    <stylesheets>
+        <URL value="@recstat.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="710.0" prefWidth="916.0">
+         <children>
+            <PieChart fx:id="pie" layoutX="24.0" layoutY="74.0" prefHeight="478.0" prefWidth="568.0" />
+            <Button layoutX="239.0" layoutY="587.0" mnemonicParsing="false" onAction="#back" prefHeight="49.0" prefWidth="134.0" text="Back" textFill="#2990b2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/14194739591511397378.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Label fx:id="nh_lab" layoutX="859.0" layoutY="270.0" prefHeight="21.0" prefWidth="35.0" text="Label" />
+            <Label fx:id="nf_lab" layoutX="859.0" layoutY="313.0" text="Label" />
+            <Label fx:id="ne_lab" layoutX="859.0" layoutY="361.0" text="Label" />
+            <Label layoutX="605.0" layoutY="270.0" text="Nombre des reclamations services" />
+            <Label layoutX="610.0" layoutY="313.0" text="Nombre des reclamations hotels" />
+            <Label layoutX="586.0" layoutY="361.0" text="Nombre des reclamations evennements" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

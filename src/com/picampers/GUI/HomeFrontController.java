@@ -35,6 +35,15 @@ public class HomeFrontController implements Initializable {
     private JFXButton club;
     @FXML
     private JFXButton hebergement;
+    @FXML
+    private JFXButton Evenement;
+    @FXML
+    private JFXButton reclamation;
+    @FXML
+    private JFXButton recompense;
+    @FXML
+    private JFXButton utilisateur;
+
 
     /**
      * Initializes the controller class.
@@ -72,6 +81,51 @@ public class HomeFrontController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(ListeHebergementsController.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+
+    @FXML
+    void goTO_evenement(ActionEvent event) {
+                 try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/picampers/GUI/FXMLchoisirehebergementa.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(ListeHebergementsController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+     @FXML
+    void goTO_reclamation(ActionEvent event) {
+                try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/picampers/GUI/FXMLchoisirehebergementa.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(ListeHebergementsController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @FXML
+    void goTO_recompense(ActionEvent event) {
+                try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/picampers/GUI/FXMLchoisirehebergementa.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            Logger.getLogger(ListeHebergementsController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @FXML
+    void goTO_utilisateur(ActionEvent event) {
+
     }
     
 }

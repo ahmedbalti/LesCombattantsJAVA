@@ -118,6 +118,8 @@ private static String usr;
     private Button btnTout;
     @FXML
     private Button retour;
+    @FXML
+    private Label adminName;
 
     private void loadHebergements(){
       IHebergementService iHebergementService =new HebergementService();
@@ -376,5 +378,9 @@ table.getSelectionModel().selectedItemProperty().addListener((observable, oldVal
         } catch (IOException ex) {
             Logger.getLogger(HomeBackController.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    @FXML
+    private void gotoclub(ActionEvent event) {
     }
 }

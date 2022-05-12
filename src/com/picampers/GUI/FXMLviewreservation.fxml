@@ -21,9 +21,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="1523.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.FXMLviewreservationController">
+<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="1296.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.FXMLviewreservationController">
    <children>
-      <TableView fx:id="table" layoutX="233.0" layoutY="43.0" onMouseClicked="#filldata" prefHeight="322.0" prefWidth="575.0" translateX="150.0" translateY="200.0">
+      <TableView fx:id="table" layoutX="140.0" layoutY="43.0" onMouseClicked="#filldata" prefHeight="322.0" prefWidth="575.0" translateX="150.0" translateY="200.0">
         <columns>
           <TableColumn fx:id="cid" prefWidth="75.0" text="ID" />
           <TableColumn fx:id="croom" prefWidth="75.0" text="Room" />
@@ -34,24 +34,20 @@
             <TableColumn fx:id="callday" prefWidth="112.0" text="All day" />
         </columns>
       </TableView>
-      <TextField fx:id="tftitre" layoutX="838.0" layoutY="87.0" prefHeight="25.0" prefWidth="174.0" promptText="Titre" translateX="150.0" translateY="200.0" />
-      <TextField fx:id="tfnom" layoutX="1090.0" layoutY="87.0" prefHeight="25.0" prefWidth="174.0" promptText="Nom" translateX="150.0" translateY="200.0" />
-      <RadioButton fx:id="rall" layoutX="884.0" layoutY="161.0" mnemonicParsing="false" text="all inclusive" translateX="150.0" translateY="200.0">
+      <TextField fx:id="tftitre" layoutX="721.0" layoutY="87.0" prefHeight="25.0" prefWidth="174.0" promptText="Titre" translateX="150.0" translateY="200.0" />
+      <TextField fx:id="tfnom" layoutX="911.0" layoutY="87.0" prefHeight="25.0" prefWidth="174.0" promptText="Nom" translateX="150.0" translateY="200.0" />
+      <RadioButton fx:id="rall" layoutX="746.0" layoutY="161.0" mnemonicParsing="false" text="all inclusive" translateX="150.0" translateY="200.0">
          <toggleGroup>
-            <ToggleGroup fx:id="g1" />
+            <ToggleGroup fx:id="g2" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton fx:id="rdemi" layoutX="1129.0" layoutY="161.0" mnemonicParsing="false" text="demi-pension" translateX="150.0" translateY="200.0">
-         <toggleGroup>
-            <ToggleGroup fx:id="g1" />
-         </toggleGroup>
-      </RadioButton>
-      <DatePicker fx:id="dpdebut" layoutX="837.0" layoutY="219.0" promptText="Debut" translateX="150.0" translateY="200.0" />
-      <DatePicker fx:id="dpfin" layoutX="1089.0" layoutY="219.0" promptText="Fin" translateX="150.0" translateY="200.0" />
+      <RadioButton fx:id="rdemi" layoutX="943.0" layoutY="162.0" mnemonicParsing="false" text="demi-pension" toggleGroup="$g2" translateX="150.0" translateY="200.0" />
+      <DatePicker fx:id="dpdebut" layoutX="722.0" layoutY="219.0" promptText="Debut" translateX="150.0" translateY="200.0" />
+      <DatePicker fx:id="dpfin" layoutX="908.0" layoutY="219.0" promptText="Fin" translateX="150.0" translateY="200.0" />
       <Button layoutX="290.0" layoutY="432.0" mnemonicParsing="false" onAction="#precedent" text="precedent" translateX="150.0" translateY="200.0" />
-      <Button layoutX="1146.0" layoutY="329.0" mnemonicParsing="false" onAction="#update" text="Modifier" translateX="150.0" translateY="200.0" />
-      <Button layoutX="889.0" layoutY="322.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" translateX="150.0" translateY="200.0" />
-      <Pane layoutX="356.0" layoutY="14.0" prefHeight="64.0" prefWidth="1073.0" style="-fx-background-color: BAB7A4;">
+      <Button layoutX="945.0" layoutY="321.0" mnemonicParsing="false" onAction="#update" text="Modifier" translateX="150.0" translateY="200.0" />
+      <Button layoutX="751.0" layoutY="322.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" translateX="150.0" translateY="200.0" />
+      <Pane layoutX="267.0" layoutY="14.0" prefHeight="64.0" prefWidth="1014.0" style="-fx-background-color: BAB7A4;">
          <children>
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#faf9f3" height="56.0" layoutX="333.0" layoutY="26.0" stroke="#0f2b4d" strokeType="OUTSIDE" strokeWidth="5.0" width="432.0" />
             <Label layoutX="401.0" layoutY="12.0" prefHeight="76.0" prefWidth="328.0" text="View Reservation" textFill="#fc92ea">
@@ -64,7 +60,7 @@
             <DropShadow />
          </effect>
       </Pane>
-      <VBox prefHeight="759.0" prefWidth="335.0" style="-fx-background-color: D1D0CA;" styleClass="right-bar" stylesheets="@../../../../../../GestionPromotion/src/Value/style.css">
+      <VBox prefHeight="759.0" prefWidth="248.0" style="-fx-background-color: D1D0CA;" styleClass="right-bar" stylesheets="@../../../../../../GestionPromotion/src/Value/style.css">
          <children>
             <HBox fx:id="chosenhotelCard" alignment="CENTER" prefHeight="110.0" prefWidth="200.0" styleClass="shadow" stylesheets="@../value/style.css">
                <children>

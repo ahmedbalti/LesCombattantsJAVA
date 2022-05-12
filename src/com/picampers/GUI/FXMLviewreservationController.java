@@ -31,6 +31,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 /**
@@ -63,8 +64,6 @@ public class FXMLviewreservationController implements Initializable {
     @FXML
     private RadioButton rall;
     @FXML
-    private ToggleGroup g1;
-    @FXML
     private RadioButton rdemi;
     @FXML
     private DatePicker dpdebut;
@@ -72,6 +71,10 @@ public class FXMLviewreservationController implements Initializable {
     private DatePicker dpfin;
     ReservationHebergementService rs=new ReservationHebergementService();
     ObservableList<ReservationHebergement> data = FXCollections.observableArrayList(); 
+    @FXML
+    private HBox chosenhotelCard;
+    @FXML
+    private ToggleGroup g2;
     /**
      * Initializes the controller class.
      */
@@ -107,7 +110,7 @@ public class FXMLviewreservationController implements Initializable {
             all_day=false;
         }
         ReservationHebergement r=new ReservationHebergement(
-                table.getSelectionModel().getSelectedItem().getId(),
+                table.getSelectionModel().getSelectedItem().getRoom(),
                 tftitre.getText(), 
                 dpdebut.getValue().atStartOfDay(), 
                 dpfin.getValue().atStartOfDay(),
@@ -152,5 +155,9 @@ public class FXMLviewreservationController implements Initializable {
             dpdebut.setValue(r.getStart().toLocalDate());
         
         }
+    }
+
+    @FXML
+    private void Acceuil(ActionEvent event) {
     }
 }

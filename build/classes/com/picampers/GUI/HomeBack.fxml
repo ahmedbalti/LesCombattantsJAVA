@@ -16,11 +16,11 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="891.0" prefWidth="1093.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.HomeBackController">
+<AnchorPane id="AnchorPane" prefHeight="769.0" prefWidth="1028.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.HomeBackController">
    <children>
-      <Pane layoutY="174.0" prefHeight="781.0" prefWidth="233.0" style="-fx-background-color: D6D6D6; -fx-border-width: 2; -fx-border-color: #1e2b3c;">
+      <Pane layoutY="138.0" prefHeight="662.0" prefWidth="210.0" style="-fx-background-color: D6D6D6; -fx-border-width: 2; -fx-border-color: #1e2b3c;">
          <children>
-            <VBox layoutX="12.0" layoutY="18.0" prefHeight="641.0" prefWidth="211.0" spacing="50.0">
+            <VBox layoutX="12.0" layoutY="18.0" prefHeight="595.0" prefWidth="191.0" spacing="50.0">
                <children>
                   <GridPane prefHeight="128.0" prefWidth="239.0" style="-fx-background-color: D6D6D6; -fx-border-width: 3; -fx-border-color: #1e2b3c;" translateY="300.0">
                     <columnConstraints>
@@ -53,71 +53,22 @@
                   <Insets bottom="20.0" top="20.0" />
                </padding>
             </VBox>
-            <JFXButton layoutX="16.0" layoutY="687.0" onAction="#logout" prefHeight="61.0" prefWidth="203.0" text="Log Out" textFill="#1e2b3c">
+            <JFXButton layoutX="4.0" layoutY="569.0" onAction="#logout" prefHeight="61.0" prefWidth="203.0" text="Log Out" textFill="#1e2b3c">
                <font>
                   <Font name="Comic Sans MS" size="25.0" />
                </font>
             </JFXButton>
          </children>
       </Pane>
-      <GridPane alignment="CENTER" hgap="50.0" layoutX="253.0" layoutY="213.0" prefHeight="737.0" prefWidth="1127.0" vgap="10.0">
-        <columnConstraints>
-          <ColumnConstraints />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints />
-        </rowConstraints>
-         <padding>
-            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-         </padding>
-         <children>
-            <Pane prefHeight="686.0" prefWidth="917.0" style="-fx-background-color: white;" />
-            <ImageView fitHeight="600.0" fitWidth="900.0" opacity="0.79" pickOnBounds="true" preserveRatio="true" translateX="10.0">
-               <image>
-                  <Image url="@../images/monde-culture.jpg" />
-               </image>
-            </ImageView>
-            <JFXButton fx:id="club" buttonType="RAISED" contentDisplay="TOP" onAction="#goTO_club" opacity="0.8" prefHeight="209.0" prefWidth="276.0" ripplerFill="BLACK" style="-fx-background-color: BAB7A4;" text="Club" textAlignment="CENTER" translateX="100.0">
-               <font>
-                  <Font name="Comic Sans MS Bold" size="51.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/logo-le-club-orange-400x400.jpg" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-            <JFXButton fx:id="hebergement" buttonType="RAISED" contentDisplay="TOP" onAction="#goTO_hebergement" opacity="0.8" prefHeight="215.0" prefWidth="378.0" ripplerFill="BLACK" style="-fx-background-color: BAB7A4;" text="Hébergement" textAlignment="CENTER" translateX="500.0">
-               <font>
-                  <Font name="Comic Sans MS Bold" size="48.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="102.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/logo-heberg.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </JFXButton>
-         </children>
-      </GridPane>
-      <Pane prefHeight="175.0" prefWidth="1400.0" style="-fx-background-color: BAB7A4;">
+      <Pane prefHeight="92.0" prefWidth="1028.0" style="-fx-background-color: BAB7A4;">
          <children>
             <ImageView fitHeight="146.0" fitWidth="348.0" layoutX="21.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/logo.png" />
                </image>
             </ImageView>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#faf9f3" height="100.0" layoutX="499.0" layoutY="111.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="413.0" />
-            <Label layoutX="564.0" layoutY="103.0" text="Home Back" textFill="#fc92ea">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#faf9f3" height="92.0" layoutX="423.0" layoutY="52.0" stroke="#1e2b3c" strokeType="OUTSIDE" strokeWidth="5.0" width="423.0" />
+            <Label layoutX="489.0" layoutY="36.0" text="Home Back" textFill="#fc92ea">
                <font>
                   <Font name="Harlow Solid Italic" size="57.0" />
                </font>
@@ -127,5 +78,95 @@
             <DropShadow />
          </effect>
       </Pane>
+      <JFXButton fx:id="hebergement" buttonType="RAISED" contentDisplay="TOP" layoutX="658.0" layoutY="394.0" onAction="#goTO_hebergement" opacity="0.8" prefHeight="96.0" prefWidth="273.0" ripplerFill="BLACK" style="-fx-background-color: BAB7A4;" text="Hébergement" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="35.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo-heberg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="utilisateur" buttonType="RAISED" contentDisplay="TOP" layoutX="664.0" layoutY="557.0" onAction="#goTO_utilisateur" opacity="0.8" prefHeight="142.0" prefWidth="282.0" ripplerFill="BLACK" style="-fx-background-color: BAB7A4;" text="Utilisateurs" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="36.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="ResReclamation" buttonType="RAISED" contentDisplay="TOP" layoutX="285.0" layoutY="565.0" onAction="#goTO_resReclamation" opacity="0.8" prefHeight="142.0" prefWidth="273.0" ripplerFill="BLACK" style="-fx-background-color: BAB7A4;" text="Reclamation" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="36.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/reclamation.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="club" buttonType="RAISED" cache="true" cacheHint="SPEED" contentDisplay="TOP" layoutX="279.0" layoutY="392.0" onAction="#goTO_club" opacity="0.8" prefHeight="92.0" prefWidth="273.0" ripplerFill="BLACK" style="-fx-background-color: BAB7A4;" text="Club" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="44.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo-le-club-orange-400x400.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="recomponse" buttonType="RAISED" contentDisplay="TOP" disable="true" layoutX="654.0" layoutY="206.0" onAction="#goTO_recomponse" opacity="0.8" prefHeight="142.0" prefWidth="282.0" ripplerFill="BLACK" style="-fx-background-color: BAB7A4;" text="Récomponse" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="40.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="69.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/recompense.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="evenement" buttonType="RAISED" contentDisplay="TOP" disable="true" layoutX="285.0" layoutY="201.0" onAction="#goTO_evenement" opacity="0.8" prefHeight="128.0" prefWidth="273.0" ripplerFill="BLACK" style="-fx-background-color: BAB7A4;" text="Evenement" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="40.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="72.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/events.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
    </children>
 </AnchorPane>

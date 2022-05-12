@@ -39,15 +39,10 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
-import javafx.collections.FXCollections;
-import javafx.event.EventHandler;
-import javafx.geometry.Pos;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TitledPane;
 import javafx.scene.layout.AnchorPane;
-import javafx.util.Duration;
 import org.apache.commons.io.IOUtils;
-import org.controlsfx.control.Notifications;
 import com.picampers.IServices.IClubService;
 
 

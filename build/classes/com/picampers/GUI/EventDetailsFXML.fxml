@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.Gui.EventDetailsFXMLController">
+   <children>
+      <Label fx:id="EventName" layoutX="33.0" layoutY="38.0" text="Label" textFill="#556fff">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label fx:id="EventLieutf" layoutX="33.0" layoutY="130.0" text="Label" textFill="#0c05ff">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <ImageView fx:id="QrCode" fitHeight="121.0" fitWidth="122.0" layoutX="33.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true" />
+      <WebView fx:id="mapwebview" layoutX="223.0" layoutY="25.0" prefHeight="393.0" prefWidth="410.0" />
+      <Label fx:id="EventDescTf" layoutX="33.0" layoutY="165.0" text="Label">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="265.0" text="Capacite" />
+      <Label fx:id="capacitetf" layoutX="106.0" layoutY="265.0" text="Label" />
+      <Label fx:id="Dtaetf" layoutX="37.0" layoutY="96.0" text="Label" />
+      <Label fx:id="jrRestant" layoutX="40.0" layoutY="114.0" text="Label" />
+   </children>
+</AnchorPane>

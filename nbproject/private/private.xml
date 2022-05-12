@@ -3,7 +3,49 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Arij/Desktop/ne/last%20one%20integration/picampers/src/com/picampers/FXMain.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/IServices/IAffectation.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/utils/Mailapi1.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/FXMain.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/FXMLreservationhebergementController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/ServiceUser.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/HomeBackController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/entities/Lieu.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/FXMLEvent.fxml</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/FXMLroomController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/Recompense/Details.fxml</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/InscriptionController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/FXMLReclamationController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/ServiceEvent.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/EventFrontFXMLController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/RestPassController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/IServices/IPromotion.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/PersonneCRUD.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/utils/MyConnection.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/entities/PromotionAffecte.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/ServiceReclamation.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/entities/Event.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/FXMLEventController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/ServiceNotification.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/entities/Promotion.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/EventDetailsFXML.fxml</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/FXMLReponseController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/AjoutHebergementController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/IServices/IService.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/ServiceLieu.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/ServiceReponseReclamation.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/RecStatController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/RecStat.fxml</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/utils/Mailer.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/ServiceAffecte.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Services/ServicePromotion.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/EventFrontFXML.fxml</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/FXMLchoisireHebergementaController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/MainClass.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/Recompense/GestionPromotion.fxml</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Controller/GestionPromotionController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/Controller/DetailsController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/GUI/EventDetailsFXMLController.java</file>
+            <file>file:/C:/Users/Ramez/Documents/NetBeansProjects/pidev-backup/ariiiiij%20pidevvv/picampers/src/com/picampers/entities/User.java</file>
         </group>
     </open-files>
 </project-private>

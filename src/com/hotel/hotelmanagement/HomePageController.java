@@ -18,7 +18,7 @@ import javafx.scene.layout.AnchorPane;
 /**
  * FXML Controller class
  *
- * @author mahdi
+ * @author arij
  */
 public class HomePageController implements Initializable {
 

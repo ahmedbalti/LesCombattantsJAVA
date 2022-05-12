@@ -49,9 +49,11 @@ ObservableList<PieChart.Data>data=FXCollections.observableArrayList();
        
          PreparedStatement PreparedStatement = cnx.prepareStatement(query);
           ResultSet rs = PreparedStatement.executeQuery();
+         
              rs.next();
              data.add(new PieChart.Data("Non disponible",rs.getInt("value"))) ;
              int x=rs.getInt("value");
+             System.out.println("***"+x);
              if(!rs.next()){
                  data.clear();
                  data.add(new PieChart.Data("disponible",x)) ;
@@ -59,6 +61,7 @@ ObservableList<PieChart.Data>data=FXCollections.observableArrayList();
              else{
                 
                 data.add(new PieChart.Data("Disponible",rs.getInt("value"))) ;
+                System.out.println("***"+rs.getInt("value"));
              }
              
                  

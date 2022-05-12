@@ -78,7 +78,7 @@ public class FXMLviewreservationtableController implements Initializable {
     private void modifier(ActionEvent event) {
         Time t=new Time(0, 0, 0);
         ReservationTable r=new ReservationTable(
-                table.getSelectionModel().getSelectedItem().getId(),
+                table.getSelectionModel().getSelectedItem().getTabl(),
                 Date.valueOf(date.getValue()),
                 t,
                 tfnbpersonne.getText(),tfname.getText());

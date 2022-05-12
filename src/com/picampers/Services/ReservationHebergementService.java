@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Mortadha
+ * @author arij
  */
 public class ReservationHebergementService implements IReservationHebergementService {
     private Connection conn;

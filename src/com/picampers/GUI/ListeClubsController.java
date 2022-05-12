@@ -135,6 +135,8 @@ public class ListeClubsController implements Initializable {
     private Button btnTout;
     @FXML
     private Button ajouter11;
+    @FXML
+    private Label adminName;
 
     void loadClubs() {
         IClubService iClubService = new ClubService();
@@ -385,6 +387,10 @@ Stage closestage=(Stage)((Node)event.getSource()).getScene().getWindow();
         } catch (IOException ex) {
             Logger.getLogger(HomeBackController.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    @FXML
+    private void gotoclub(ActionEvent event) {
     }
     
 }

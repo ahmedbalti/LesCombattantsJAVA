@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 /**
  *
- * @author Mortadha
+ * @author arij
  */
 public class ReservationHebergement {
     private int id;

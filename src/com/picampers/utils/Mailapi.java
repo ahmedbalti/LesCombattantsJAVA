@@ -12,7 +12,7 @@ import javax.mail.*;
 import javax.mail.internet.*;
 /**
  *
- * @author Mortadha
+ * @author arij
  */
 public class Mailapi {
     

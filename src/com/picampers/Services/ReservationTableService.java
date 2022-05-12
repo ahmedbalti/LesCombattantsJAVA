@@ -16,10 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.joda.time.LocalTime;
 
 /**
  *
- * @author Mortadha
+ * @author arij
  */
 public class ReservationTableService implements IReservationTableService{
 private Connection conn;
@@ -32,7 +33,7 @@ private Connection conn;
         try {
             String query="INSERT INTO `reservation`(`tabl`, `date`, `heure`, `nbr_personnes`, `name`) "
                     + "VALUES ('"+r.getTabl()+"','"+r.getDate()+"',"
-                    + "'"+r.getHeure()+"','"+r.getNbr_personnes()+"',"
+                    + "'"+LocalTime.now()+"','"+r.getNbr_personnes()+"',"
                     + "'"+r.getName()+"')";
             Statement st;
             st=conn.createStatement();
@@ -61,7 +62,7 @@ private Connection conn;
             String query="UPDATE `reservation` SET "
                     + "`tabl`='"+r.getTabl()+"',"
                     + "`date`='"+r.getDate()+"',"
-                    + "`heure`='"+r.getHeure()+"',"
+                    + "`heure`='"+LocalTime.now()+"',"
                     + "`nbr_personnes`='"+r.getNbr_personnes()+"',"
                     + "`name`='"+r.getName()+"' WHERE id="+id;
             Statement st;

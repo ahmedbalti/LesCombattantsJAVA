@@ -12,9 +12,9 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="784.0" prefWidth="1419.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.FXMLtableController">
+<AnchorPane id="AnchorPane" prefHeight="784.0" prefWidth="1419.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.picampers.GUI.FXMLtableController">
    <children>
-      <TableView fx:id="table" layoutX="-12.0" layoutY="78.0" prefHeight="391.0" prefWidth="641.0" translateX="300.0" translateY="200.0">
+      <TableView fx:id="table" layoutX="-12.0" layoutY="78.0" onMouseClicked="#filldata" prefHeight="391.0" prefWidth="641.0" translateX="300.0" translateY="200.0">
         <columns>
           <TableColumn fx:id="cid" prefWidth="75.0" text="ID" />
           <TableColumn fx:id="ccoverid" prefWidth="75.0" text="cover id" />

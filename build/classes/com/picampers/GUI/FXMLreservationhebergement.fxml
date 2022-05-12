@@ -123,7 +123,7 @@
             <TableColumn fx:id="ctype" prefWidth="88.0" text="type" />
          </columns>
       </TableView>
-      <Button layoutX="277.0" layoutY="603.0" mnemonicParsing="false" onAction="#precedent" text="Precedent" />
+      <Button layoutX="262.0" layoutY="589.0" mnemonicParsing="false" onAction="#precedent" text="Precedent" />
       <Button layoutX="1133.0" layoutY="599.0" mnemonicParsing="false" onAction="#gotoreservation" text="View my reservation" />
    </children>
 </AnchorPane>

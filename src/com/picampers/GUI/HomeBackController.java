@@ -35,6 +35,15 @@ public class HomeBackController implements Initializable {
     private JFXButton club;
     @FXML
     private JFXButton hebergement;
+    @FXML
+    private JFXButton evenement;
+    @FXML
+    private JFXButton recomponse;
+    @FXML
+    private JFXButton ResReclamation;
+
+    @FXML
+    private JFXButton utilisateur;
 
     /**
      * Initializes the controller class.
@@ -76,4 +85,62 @@ public class HomeBackController implements Initializable {
         }
     }
     
+     
+      @FXML
+    private void goTO_evenement(ActionEvent event) {
+                        try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("/com/picampers/GUI/FXMLEvent.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            //Logger.getLogger(FXMLEventController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+
+    @FXML
+    private void goTO_recomponse(ActionEvent event) {
+                   try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("/com/picampers/GUI/Recompense/GestionPromotion.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+            //Logger.getLogger(ListeHebergementsController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    @FXML
+   private void goTO_resReclamation(ActionEvent event) {
+                   try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/picampers/GUI/FXMLReclamation.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+           // Logger.getLogger(ListeHebergementsController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    @FXML
+   private void goTO_utilisateur(ActionEvent event) {
+            try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("com/picampers/GUI/gestionUser.fxml"));
+            Scene scene = new Scene(root);
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException ex) {
+           // Logger.getLogger(ListeHebergementsController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+  /*  @FXML
+    void test(ActionEvent event) {
+        System.out.println("testing");
+    }*/
+
 }

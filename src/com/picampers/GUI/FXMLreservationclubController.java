@@ -120,7 +120,7 @@ public class FXMLreservationclubController implements Initializable {
             Table tab=table.getSelectionModel().getSelectedItem();
             tab.setDisponibilite(false);
             sr.update(tab.getId(), tab);
-            Mailapi.send("testapimail63@gmail.com", "TESTapimail2022","hajer.moumni@esprit.tn", "Reservation table", "Vous avez reserver une table pour : "+r.getNbr_personnes()+" personnes");
+            Mailapi.send("testapimail63@gmail.com", "TESTapimail2022","arij.ghazouani@esprit.tn", "Reservation table", "Vous avez reserver une table pour : "+r.getNbr_personnes()+" personnes");
 
             refresh();
         }

@@ -14,11 +14,7 @@
 
 package com.picampers.GUI;
 
-import java.io.UnsupportedEncodingException;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.Base64;
-import org.apache.commons.lang3.ArrayUtils;
+
 
 /**
  * JUnit unit tests for BCrypt routines

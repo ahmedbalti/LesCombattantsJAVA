@@ -21,7 +21,7 @@ import java.util.stream.Collectors;
 import java.util.Comparator;
 /**
  *
- * @author Mortadha
+ * @author arij
  */
 public class TableService implements ITableService{
      private Connection conn;
